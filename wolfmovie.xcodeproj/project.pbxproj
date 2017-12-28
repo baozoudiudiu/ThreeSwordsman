@@ -38,6 +38,7 @@
 		66E62D0C1FF54FAD007375C0 /* WMBaseNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMBaseNavController.m; sourceTree = "<group>"; };
 		66E62D0E1FF54FEB007375C0 /* WMNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMNavigationController.h; sourceTree = "<group>"; };
 		66E62D0F1FF54FEB007375C0 /* WMNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMNavigationController.m; sourceTree = "<group>"; };
+		66E62D111FF554C7007375C0 /* WMPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 				66E62CEB1FF5470A007375C0 /* LaunchScreen.storyboard */,
 				66E62CEE1FF5470A007375C0 /* WM_Info.plist */,
 				66E62CEF1FF5470A007375C0 /* main.m */,
+				66E62D111FF554C7007375C0 /* WMPrefixHeader.pch */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -392,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/wolfmovie/System/WMPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/wolfmovie/System/WM_Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.threeSwordman.wolfmovie;
@@ -405,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/wolfmovie/System/WMPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/wolfmovie/System/WM_Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.threeSwordman.wolfmovie;
