@@ -34,6 +34,8 @@
 
 - (void)setUpTabBar {
     self.tabBar.tintColor = kTabBarSelectedColor;
+    self.tabBar.translucent = NO;
+    self.tabBar.barTintColor = [UIColor whiteColor];
 }
 
 - (void)setUpViewControllers {
@@ -66,7 +68,7 @@
 
 #pragma mark - Property
 - (NSArray *)classArr {
-    return @[@"UIViewController",
+    return @[@"WMHomePageViewController",
              @"UIViewController",
              @"UIViewController",
              @"UIViewController"];
@@ -92,6 +94,11 @@
              @"t-11-2",
              @"t-12-2"];
 }
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

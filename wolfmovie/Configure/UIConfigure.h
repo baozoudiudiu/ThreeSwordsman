@@ -15,7 +15,7 @@
 #define UIConfigure_h
 // 获取RGB颜色
 #define kRGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
-#define kRGB(r,g,b) RGBA(r,g,b,1.0f)
+#define kRGB(r,g,b) kRGBA(r,g,b,1.0f)
 #define kHEXCOLOR(c) [UIColor colorWithRed:((c>>16)&0xFF)/255.0 green:((c>>8)&0xFF)/255.0 blue:(c&0xFF)/255.0 alpha:1.0]
 
 // 下方tabBar按钮选中字体颜色

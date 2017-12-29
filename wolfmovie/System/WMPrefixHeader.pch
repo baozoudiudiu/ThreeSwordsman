@@ -15,6 +15,7 @@
 #define WMPrefixHeader_pch
 
 #import "UIConfigure.h"
+#import "UIViewController+WMNavigationBar.h"
 
 #endif
 #endif /* WMPrefixHeader_pch */

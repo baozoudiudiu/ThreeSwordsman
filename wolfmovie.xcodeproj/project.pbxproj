@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		666F0EE61FF5EA4E00B1FAFF /* UIViewController+WMNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 666F0EE51FF5EA4E00B1FAFF /* UIViewController+WMNavigationBar.m */; };
+		666F0EEA1FF5EC1000B1FAFF /* WMHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666F0EE91FF5EC1000B1FAFF /* WMHomePageViewController.m */; };
 		66E62CE21FF5470A007375C0 /* WM_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E62CE11FF5470A007375C0 /* WM_AppDelegate.m */; };
 		66E62CE81FF5470A007375C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E62CE61FF5470A007375C0 /* Main.storyboard */; };
 		66E62CEA1FF5470A007375C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66E62CE91FF5470A007375C0 /* Assets.xcassets */; };
@@ -21,6 +23,10 @@
 
 /* Begin PBXFileReference section */
 		2E8ADB33701981058182700B /* Pods-wolfmovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wolfmovie.release.xcconfig"; path = "Pods/Target Support Files/Pods-wolfmovie/Pods-wolfmovie.release.xcconfig"; sourceTree = "<group>"; };
+		666F0EE41FF5EA4E00B1FAFF /* UIViewController+WMNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WMNavigationBar.h"; sourceTree = "<group>"; };
+		666F0EE51FF5EA4E00B1FAFF /* UIViewController+WMNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WMNavigationBar.m"; sourceTree = "<group>"; };
+		666F0EE81FF5EC1000B1FAFF /* WMHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WMHomePageViewController.h; path = wolfmovie/Sections/HomePage/WMHomePageViewController.h; sourceTree = SOURCE_ROOT; };
+		666F0EE91FF5EC1000B1FAFF /* WMHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WMHomePageViewController.m; path = wolfmovie/Sections/HomePage/WMHomePageViewController.m; sourceTree = SOURCE_ROOT; };
 		66E62CDD1FF5470A007375C0 /* wolfmovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wolfmovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E62CE01FF5470A007375C0 /* WM_AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WM_AppDelegate.h; sourceTree = "<group>"; };
 		66E62CE11FF5470A007375C0 /* WM_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WM_AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +80,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		666F0EE31FF5EA0800B1FAFF /* category */ = {
+			isa = PBXGroup;
+			children = (
+				666F0EE41FF5EA4E00B1FAFF /* UIViewController+WMNavigationBar.h */,
+				666F0EE51FF5EA4E00B1FAFF /* UIViewController+WMNavigationBar.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		666F0EEB1FF5EC6D00B1FAFF /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				666F0EE81FF5EC1000B1FAFF /* WMHomePageViewController.h */,
+				666F0EE91FF5EC1000B1FAFF /* WMHomePageViewController.m */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
 		66E62CD41FF54709007375C0 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +121,8 @@
 		66E62CDF1FF5470A007375C0 /* wolfmovie */ = {
 			isa = PBXGroup;
 			children = (
-				66E62CFB1FF54A4B007375C0 /* Vendors */,
 				66E62CFA1FF54A47007375C0 /* Sections */,
+				66E62CFB1FF54A4B007375C0 /* Vendors */,
 				66E62CF91FF54A40007375C0 /* Resources */,
 				66E62CF81FF54A3A007375C0 /* Configure */,
 				66E62CF71FF54A36007375C0 /* Common */,
@@ -122,8 +146,8 @@
 		66E62CF71FF54A36007375C0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				666F0EE31FF5EA0800B1FAFF /* category */,
 				66E62D021FF54CF9007375C0 /* Helper */,
-				66E62D011FF54CEF007375C0 /* category */,
 				66E62D001FF54CD3007375C0 /* Base */,
 			);
 			path = Common;
@@ -150,8 +174,8 @@
 		66E62CFA1FF54A47007375C0 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				666F0EEB1FF5EC6D00B1FAFF /* HomePage */,
 				66E62D041FF54D47007375C0 /* RootPage */,
-				66E62D031FF54D1F007375C0 /* HomePage */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -174,25 +198,11 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		66E62D011FF54CEF007375C0 /* category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = category;
-			sourceTree = "<group>";
-		};
 		66E62D021FF54CF9007375C0 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Helper;
-			sourceTree = "<group>";
-		};
-		66E62D031FF54D1F007375C0 /* HomePage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HomePage;
 			sourceTree = "<group>";
 		};
 		66E62D041FF54D47007375C0 /* RootPage */ = {
@@ -337,7 +347,9 @@
 				66E62CF01FF5470A007375C0 /* main.m in Sources */,
 				66E62CE21FF5470A007375C0 /* WM_AppDelegate.m in Sources */,
 				66E62D071FF54D7D007375C0 /* WMBaseTabBarController.m in Sources */,
+				666F0EE61FF5EA4E00B1FAFF /* UIViewController+WMNavigationBar.m in Sources */,
 				66E62D0D1FF54FAD007375C0 /* WMBaseNavController.m in Sources */,
+				666F0EEA1FF5EC1000B1FAFF /* WMHomePageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
