@@ -20,7 +20,8 @@
 
 // 下方tabBar按钮选中字体颜色
 #define kTabBarUnSelectedColor [UIColor colorWithRed:0.32 green:0.32 blue:0.32 alpha:1.00]
-#define kTabBarSelectedColor kRGBA(223,174,135,1)
+#define kTabBarSelectedColor kRGBA(255,141,51,1)
+
 //导航栏背景色
 #define kNavigationBarBgColor kRGBA(53,49,52,1)
 

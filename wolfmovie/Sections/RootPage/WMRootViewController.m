@@ -27,13 +27,13 @@
 - (UIViewController *)setUpChildViewControllers:(NSString *)itemTitle vc_class:(NSString *)classString normalImg:(NSString *)norImg selectedImg:(NSString *)selectedImg{
     WMNavigationController *nav = [[WMNavigationController alloc] initWithRootViewController:[[NSClassFromString(classString) alloc]init]];
     nav.tabBarItem.title = itemTitle;
-    nav.tabBarItem.image = [UIImage imageNamed:norImg];
-    nav.tabBarItem.selectedImage = [UIImage imageNamed:selectedImg];
+    nav.tabBarItem.image = [[UIImage imageNamed:norImg] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    nav.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImg] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     return nav;
 }
 
 - (void)setUpTabBar {
-    self.tabBar.tintColor = [UIColor orangeColor];
+    self.tabBar.tintColor = kTabBarSelectedColor;
 }
 
 - (void)setUpViewControllers {
@@ -74,23 +74,23 @@
 
 - (NSArray *)titlesArr {
     return @[@"首页",
-             @"二页",
-             @"三页",
-             @"四页"];
+             @"推荐",
+             @"热播",
+             @"我的"];
 }
 
 - (NSArray *)normalImgsArr {
-    return @[@"",
-             @"",
-             @"",
-             @""];
+    return @[@"t-09-1",
+             @"t-10-1",
+             @"t-11-1",
+             @"t-12-1"];
 }
 
 - (NSArray *)selectedImgsArr {
-    return @[@"",
-             @"",
-             @"",
-             @""];
+    return @[@"t-09-2",
+             @"t-10-2",
+             @"t-11-2",
+             @"t-12-2"];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
